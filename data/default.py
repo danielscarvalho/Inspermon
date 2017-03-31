@@ -35,3 +35,6 @@ insmon={
 		'defesa':100000,
 	},
 }
+
+insperdex={
+}
