@@ -4,12 +4,13 @@ import sys
 cfug=100 #chance de fuga
 cata=50 #chance de ataque
 sys.path.append('./data')
-from default import player
+import default
 import save
-if save.player: player=save.player
+insperdex={}
 acao=input("Quer apagar o save ou usar ele?(a/u)".lower())
 if acao=="wwssadadba":
-	player[choice]=5
+	player=save.player
+	player['choice']=5
 	print('''
 		_______
 	    .adOOOOOOOOOba.
@@ -34,11 +35,17 @@ if acao=="wwssadadba":
 	
 elif acao=='a':
 	with open('./data/save.py', 'w') as file:
-			file.write(str("player={'choice':0}\ninsperdex={}"))
+			file.write(str("player={0}\ninsperdex={1}").format(default.player,insperdex))
+	player=default.player
+	#player['choice']=0
+else:
+	player=save.player
 			
-if player[choice]==0:
-	player
-	acao=input("Escolha seu pokemon inicial:\n1-{0}\n1-{1}\n1-{2}".format(player['inspermon']['1']['name'],player['inspermon']['2']['name'],player['inspermon']['3']['name'])
+if player['choice']==0:
+	while player['choice']!=1 and player['choice']!=2 and player['choice']!=3 and player['choice']!=4:
+		player['choice']=-1
+		acao=input("Escolha seu pokemon inicial:\n1-{0}\n2-{1}\n3-{2}".format(player['inspermon']['1']['name'],player['inspermon']['2']['name'],player['inspermon']['3']['name']))
+		player['choice']=int(acao)
 
 
 
@@ -50,6 +57,6 @@ while True:
 		print(x)
 	elif acao=='d':
 		with open('./data/save.py', 'w') as file:
-			file.write(str("player={0}\ninsperdex={1}".format(player,y)))
+			file.write(str("player={0}\ninsperdex={1}".format(player,insperdex)))
 		exit()
 	

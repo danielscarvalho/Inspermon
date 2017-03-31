@@ -1,2 +1,2 @@
-player={}
+player={'choice': 0, 'inspermon': {'1': {'name': 'pichuchu', 'poder': 30, 'vida': 40, 'defesa': 15, 'exp': 0}, '2': {'name': 'pichuchu', 'poder': 30, 'vida': 40, 'defesa': 15, 'exp': 0}, '3': {'name': 'pichuchu', 'poder': 30, 'vida': 40, 'defesa': 15, 'exp': 0}, '4': {'name': 'pichuchu', 'poder': 30, 'vida': 40, 'defesa': 15, 'exp': 0}, '5': {'name': 'orange', 'poder': 10000, 'vida': 10000, 'defesa': 10000, 'exp': 1000}}}
 insperdex={}
