@@ -1,1 +1,0 @@
-player={'insperdex': {'pichuchu': {'poder': 30, 'vida': -99945, 'defesa': 15}}}

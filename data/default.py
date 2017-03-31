@@ -1,5 +1,5 @@
 player={
-	'insperdex': {
+	'inspermon': {
 		'pichuchu':{
 			'poder':30,
 			'vida':40,
@@ -30,9 +30,9 @@ insmon={
 		'defesa':15,
 	},
 	'orange':{
-		'poder':100000,
-		'vida':1000000,
-		'defesa':100000,
+		'poder':20,
+		'vida':40,
+		'defesa':15,
 	},
 }
 
