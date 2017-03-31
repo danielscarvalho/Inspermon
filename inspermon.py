@@ -13,7 +13,7 @@ while True:
 	print("\n"*3)
 	acao=input("Quer passear ou salvar e dormir?(p/d)".lower())
 	if acao=='p':
-		(x,y)=batalha.batalha(player['inspermon']['pichuchu'],cata,cfug)
+		(x,y,player['inspermon']['pichuchu']['exp'])=batalha.batalha(player['inspermon']['pichuchu'],cata,cfug)
 		print(x)
 	elif acao=='d':
 		with open('./data/save.py', 'w') as file:

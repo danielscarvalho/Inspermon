@@ -4,6 +4,7 @@ player={
 			'poder':30,
 			'vida':40,
 			'defesa':15,
+			'exp':0,
 		}
 	}
 }
@@ -13,26 +14,31 @@ insmon={
 		'poder':20,
 		'vida':40,
 		'defesa':15,
+		'exp':0,
 	},
 	'babybef':{
 		'poder':20,
 		'vida':40,
 		'defesa':15,
+		'exp':0,
 	},
 	'bilabila':{
 		'poder':20,
 		'vida':40,
 		'defesa':15,
+		'exp':0,
 	},
 	'bronibru':{
 		'poder':20,
 		'vida':40,
 		'defesa':15,
+		'exp':0,
 	},
 	'orange':{
 		'poder':20,
 		'vida':40,
 		'defesa':15,
+		'exp':0,
 	},
 }
 

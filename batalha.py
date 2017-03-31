@@ -12,8 +12,9 @@ def insale(x):
 	return insmon[y],y
 	
 def batalha(seu,cata,cfug):
+	exp=seu['exp']
 	opt,mon=insale(random.randint(0,10000))
-	if mon==-1:return "Voce procurou mas nao encontrou ninguem",insperdex
+	if mon==-1:return "Voce procurou mas nao encontrou ninguem",insperdex,exp+0
 	insperdex[mon]=opt
 	vidop,vid=opt['vida'],seu['vida']
 	print("\n"*3)
@@ -23,13 +24,13 @@ def batalha(seu,cata,cfug):
 	w=input("Tentar fugir?(S/N)".lower())
 	if w=='s':
 		if(random.randint(0,100)<cfug):
-			return 'voce conseguiu fugir'
+			return 'voce conseguiu fugir',insperdex,exp+1
 		else:
 			print('voce nao conseguiu fugir')
 	while vid>0 and vidop>0:
 		if(random.randint(0,100)<cata): vidop-=(seu['poder']-opt['defesa'])
 		else: vid-=(opt['poder']-seu['defesa'])
 		
-	if vid<=0 and vidop<=0: return 'Empate',insperdex
-	elif vid<=0: return 'Voce perdeu',insperdex
-	elif vidop<=0: return 'Voce ganhou',insperdex
+	if vid<=0 and vidop<=0: return 'Empate',insperdex,exp+0
+	elif vid<=0: return 'Voce perdeu',insperdex,exp-opt['exp']
+	elif vidop<=0: return 'Voce ganhou',insperdex,exp+opt['exp']
