@@ -3,6 +3,8 @@ import sys
 sys.path.append('./data')
 from default import insmon
 from default import insperdex
+import save
+if save.insperdex: insperdex=save.insperdex
 
 def insale(x):
 	if x>8532 and x<9000: return -1,-1 
@@ -11,7 +13,7 @@ def insale(x):
 	
 def batalha(seu,cata,cfug):
 	opt,mon=insale(random.randint(0,10000))
-	if mon==-1:return "Voce procurou mas nao encontrou ninguem"
+	if mon==-1:return "Voce procurou mas nao encontrou ninguem",insperdex
 	insperdex[mon]=opt
 	vidop,vid=opt['vida'],seu['vida']
 	print("\n"*3)
