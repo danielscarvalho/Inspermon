@@ -28,7 +28,7 @@ def batalha(seu,cata,cfug):
 		else:
 			print('voce nao conseguiu fugir')
 	while vid>0 and vidop>0:
-		if(random.randint(0,100)<cata): vidop-=(seu['poder']-opt['defesa'])
+		if(random.randint(0,100)<cata): vidop-=((seu['poder']*seu['exp']/100)-opt['defesa'])
 		else: vid-=(opt['poder']-seu['defesa'])
 		
 	if vid<=0 and vidop<=0: return 'Empate',insperdex,exp+0
