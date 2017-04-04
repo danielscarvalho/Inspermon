@@ -16,7 +16,7 @@ def batalha(seu,cata,cfug):
 	opt,mon=insale(random.randint(0,10000))
 	if mon==-1:return "Voce procurou mas nao encontrou ninguem",insperdex,exp+0
 	insperdex[mon]=opt
-	vidop,vid=opt['vida'],seu['vida']
+	vidop,vid=opt['vida']*seu['exp']/10,seu['vida']*seu['exp']/10
 	print("\n"*3)
 	print("Voce encontrou {0}".format(mon))
 	if opt['poder']:print("poder: {0} \nvida: {1} \ndefesa: {2}".format(opt['poder'],opt['vida'],opt['defesa']))
