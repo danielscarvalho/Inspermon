@@ -37,6 +37,13 @@ player={
 			'exp':0,
 		},
 		'6':{
+			'name':'Narf',
+			'poder':100,
+			'vida':200,
+			'defesa':100,
+			'exp':0,
+		},
+		'7':{
 				'name':'Tioranja',
 				'poder':666,
 				'vida':666,
