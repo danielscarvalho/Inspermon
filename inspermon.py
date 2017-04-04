@@ -1,7 +1,7 @@
 import random
 import batalha
 import sys
-cfug=100 #chance de fuga
+cfug=50 #chance de fuga
 cata=50 #chance de ataque
 sys.path.append('./data')
 import default
@@ -10,7 +10,7 @@ insperdex={}
 acao=input("Quer apagar o save ou usar ele?(a/u)".lower())
 if acao=="wwssadadba":
 	player=save.player
-	player['choice']=5
+	player['choice']=7
 	print('''
 		_______
 	    .adOOOOOOOOOba.
@@ -32,20 +32,22 @@ if acao=="wwssadadba":
 	    `OOOOOOOOOOO'
 	     `~OOOOO~'   UNLOCKED
 	''')
+	print("Voce selecionou: \nnome: {0} \npoder: {1} \nvida: {2} \ndefesa: {3}".format(player['inspermon']['7']['name'],player['inspermon']['7']['poder'],player['inspermon']['7']['vida'],player['inspermon']['7']['defesa']))
 	
 elif acao=='a':
 	with open('./data/save.py', 'w') as file:
 			file.write(str("player={0}\ninsperdex={1}").format(default.player,insperdex))
 	player=default.player
-	#player['choice']=0
+	player['choice']=0
 else:
 	player=save.player
 			
 if player['choice']==0:
-	while player['choice']!=1 and player['choice']!=2 and player['choice']!=3 and player['choice']!=4:
+	while player['choice']!=1 and player['choice']!=2 and player['choice']!=3 and player['choice']!=4 and player['choice']!=5 and player['choice']!=6:
 		player['choice']=-1
-		acao=input("Escolha seu pokemon inicial:\n1-{0}\n2-{1}\n3-{2}".format(player['inspermon']['1']['name'],player['inspermon']['2']['name'],player['inspermon']['3']['name']))
+		acao=input("Escolha seu pokemon inicial:\n1-{0}\n2-{1}\n3-{2}\n4-{3}\n5-{4}".format(player['inspermon']['1']['name'],player['inspermon']['2']['name'],player['inspermon']['3']['name'],player['inspermon']['4']['name'],player['inspermon']['5']['name']))
 		player['choice']=int(acao)
+	print("Voce selecionou: \nnome: {0} \npoder: {1} \nvida: {2} \ndefesa: {3}".format(player['inspermon'][acao]['name'],player['inspermon'][acao]['poder'],player['inspermon'][acao]['vida'],player['inspermon'][acao]['defesa']))
 
 
 
