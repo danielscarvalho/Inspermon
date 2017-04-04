@@ -11,7 +11,7 @@ player={
 		'2':{
 			'name':'Romareep',
 			'poder':50,
-			'vida':30,
+			'vida':25,
 			'defesa':10,
 			'exp':0,
 		},
@@ -25,15 +25,15 @@ player={
 		'4':{
 			'name':'Fabinetom',
 			'poder':20,
-			'vida':40,
-			'defesa':50,
+			'vida':50,
+			'defesa':40,
 			'exp':0,
 		},
 		'5':{
 			'name':'Fernatut',
 			'poder':30,
 			'vida':40,
-			'defesa':15,
+			'defesa':25,
 			'exp':0,
 		},
 		'6':{
@@ -71,11 +71,36 @@ insmon={
 		'defesa':30,
 		'exp':10,
 	},
+	
 	'orange':{
 		'poder':3,
 		'vida':10,
 		'defesa':5,
 		'exp':5,
+	},
+	'xubiscru':{
+		'poder':15,
+		'vida':30,
+		'defesa':25,
+		'exp':15,
+	},
+	'lalatub':{
+		'poder':25,
+		'vida':10,
+		'defesa':15,
+		'exp':15,
+	},
+	'kazuba':{
+		'poder':13,
+		'vida':40,
+		'defesa':25,
+		'exp':15,
+	},
+	'eucrezio':{
+		'poder':50,
+		'vida':20,
+		'defesa':15,
+		'exp':15,
 	},
 }
 
