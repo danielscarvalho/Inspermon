@@ -3,6 +3,7 @@ import batalha
 import sys
 cfug=50 #chance de fuga
 cata=50 #chance de ataque
+gg=0 #1 sem debug 0 com debug
 sys.path.append('./data')
 import default
 import save
@@ -52,10 +53,11 @@ if player['choice']==0:
 
 
 while True:
-	print("\n"*3)
-	acao=input("Quer passear ou salvar e dormir?(p/d)".lower())
+	if gg:print("\n"*3)
+	if gg:acao=input("Quer passear ou salvar e dormir?(p/d)".lower())
+	else:acao='p'
 	if acao=='p':
-		(x,insperdex,player['inspermon'][str(player['choice'])]['exp'])=batalha.batalha(player['inspermon'][str(player['choice'])],cata,cfug)
+		(x,insperdex,player['inspermon'][str(player['choice'])]['exp'])=batalha.batalha(player['inspermon'][str(player['choice'])],cata,cfug,1,gg)
 		print(x)
 	elif acao=='d':
 		with open('./data/save.py', 'w') as file:

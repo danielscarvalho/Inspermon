@@ -38,9 +38,9 @@ player={
 		},
 		'6':{
 			'name':'Narf',
-			'poder':100,
-			'vida':500,
-			'defesa':100,
+			'poder':70,
+			'vida':100,
+			'defesa':70,
 			'exp':100,
 		},
 		'7':{
