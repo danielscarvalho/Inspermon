@@ -1,6 +1,7 @@
 import random
 import batalha
 import sys
+import lifee
 cfug=50 #chance de fuga
 cata=50 #chance de ataque
 sys.path.append('./data')
@@ -9,6 +10,9 @@ import save
 insperdex={}
 acao=input("Quer apagar o save ou usar ele?(a/u)".lower())
 if acao=="wwssadadba":
+	acao1=input('<g>ame of life ou <c>continuar')#
+	if acao1=='g':
+		lifee.LufLuf()
 	player=save.player
 	player['choice']=7
 	print('''
