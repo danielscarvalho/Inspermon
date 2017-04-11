@@ -11,24 +11,25 @@ def insale(x):
 	y=random.choice(list(insmon.keys()))
 	return insmon[y],y
 	
-def batalha(seu,cata,cfug):
+def batalha(seu,cata,cfug,bb,gg):
 	exp=seu['exp']
 	opt,mon=insale(random.randint(0,10000))
 	if mon==-1:return "Voce procurou mas nao encontrou ninguem",insperdex,exp+0
 	insperdex[mon]=opt
-	vidop,vid=opt['vida']*seu['exp']/120,seu['vida']*seu['exp']/100
-	print("\n"*3)
-	print("Voce encontrou {0}".format(mon))
-	if opt['poder']:print("poder: {0} \nvida: {1} \ndefesa: {2}".format(opt['poder'],opt['vida'],opt['defesa']))
-	print("\n"*3)
-	w=input("Tentar fugir?(S/N)".lower())
+	vidop,vid=opt['vida'],seu['vida']
+	if gg:print("\n"*3)
+	if gg:print("Voce encontrou {0}".format(mon))
+	if opt['poder'] and gg:print("poder: {0} \nvida: {1} \ndefesa: {2}".format(opt['poder'],opt['vida'],opt['defesa']))
+	if gg:print("\n"*3)
+	if gg:w=input("Tentar fugir?(S/N)".lower())
+	else:w='n'
 	if w=='s':
 		if(random.randint(0,100)<cfug):
 			return 'voce conseguiu fugir',insperdex,exp+1
 		else:
 			print('voce nao conseguiu fugir')
-	print (seu['exp'])
 	while vid>0 and vidop>0:
+<<<<<<< HEAD
 		if(random.randint(0,100)<cata):
 			if ((seu['poder']*seu['exp']/100)-(opt['defesa']*seu['exp']/120))>=0: 
 				vidop-=((seu['poder']*seu['exp']/100)-(opt['defesa']*seu['exp']/120))
@@ -37,6 +38,23 @@ def batalha(seu,cata,cfug):
 				vid-=(opt['poder']*seu['exp']/120-(seu['defesa']*seu['exp']/100))
 				print("Voce foi atacado, vida:{}".format(vid))
 			else: return 'Empate',insperdex,exp
+=======
+		if bb==0:
+			if(random.randint(0,100)<cata) and ((seu['poder'])-opt['defesa'])>0:
+				vidop-=((seu['poder'])-opt['defesa'])
+				#print("Voce atacou, vida oponente:{}".format(vidop))
+			elif (opt['poder']-seu['defesa'])>0: 
+				vid-=(opt['poder']-seu['defesa'])
+				#print("Voce foi atacado, vida:{}".format(vid))
+			else: return 'Voce perdeu',insperdex,100
+		else:
+			if(random.randint(0,100)<cata):
+				vidop-=(seu['poder']/opt['defesa'])*1
+				#print("Voce atacou, vida oponente:{}".format(vidop))
+			else:
+				vid-=(opt['poder']/seu['defesa'])*1
+				#print("Voce foi atacado, vida:{}".format(vid))
+>>>>>>> 04d17ce1f1c7b1fb3a96458b2e44f1b8cc2d1369
 		
 		
 	if vid<=0 and vidop<=0: return 'Empate',insperdex,exp+0
