@@ -29,13 +29,14 @@ def batalha(seu,cata,cfug):
 			print('voce nao conseguiu fugir')
 	print (seu['exp'])
 	while vid>0 and vidop>0:
-		if(random.randint(0,100)<cata) and ((seu['poder']*seu['exp']/100)-opt['defesa']*seu['exp']/120)>0: 
-			vidop-=((seu['poder']*seu['exp']/100)-opt['defesa']*seu['exp']/120)
-			print("Voce atacou, vida oponente:{}".format(vid))
-		elif (opt['poder']*seu['exp']/120-seu['defesa']*seu['exp']/100)>0: 
-			vid-=(opt['poder']*seu['exp']/120-seu['defesa']*seu['exp']/100)
-			print("Voce foi atacado, vida:{}".format(vid))
-		else: return 'Voce perdeu',insperdex,100
+		if(random.randint(0,100)<cata):
+			if ((seu['poder']*seu['exp']/100)-(opt['defesa']*seu['exp']/120))>=0: 
+				vidop-=((seu['poder']*seu['exp']/100)-(opt['defesa']*seu['exp']/120))
+				print("Voce atacou, vida oponente:{}".format(vid))
+			elif (opt['poder']*seu['exp']/120-seu['defesa']*seu['exp']/100)>=0: 
+				vid-=(opt['poder']*seu['exp']/120-(seu['defesa']*seu['exp']/100))
+				print("Voce foi atacado, vida:{}".format(vid))
+			else: return 'Empate',insperdex,exp
 		
 		
 	if vid<=0 and vidop<=0: return 'Empate',insperdex,exp+0
@@ -43,5 +44,5 @@ def batalha(seu,cata,cfug):
 		if (exp-opt['exp'])<100:
 			return 'Voce perdeu',insperdex,exp-opt['exp']
 		else:
-			return 'Voce perdeu',insperdex,101
+			return 'Voce perdeu',insperdex,130
 	elif vidop<=0: return 'Voce ganhou',insperdex,exp+opt['exp']
