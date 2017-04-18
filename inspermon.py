@@ -3,7 +3,7 @@ import batalha
 import sys
 cfug=50 #chance de fuga
 cata=50 #chance de ataque
-gg=0 #1 sem debug 0 com debug
+gg=1 #1 sem debug 0 com debug
 sys.path.append('./data')
 import default
 import save
