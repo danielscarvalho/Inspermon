@@ -1,0 +1,332 @@
+************* Module inspermon
+C:  5, 0: Exactly one space required around assignment
+cfug=50 #chance de fuga
+    ^ (bad-whitespace)
+C:  6, 0: Exactly one space required around assignment
+cata=50 #chance de ataque
+    ^ (bad-whitespace)
+C:  7, 0: Exactly one space required around assignment
+gg=1 #1 sem debug 0 com debug
+  ^ (bad-whitespace)
+C: 11, 0: Exactly one space required around assignment
+insperdex={}
+         ^ (bad-whitespace)
+C: 12, 0: Exactly one space required around assignment
+acao=input("Quer apagar o save ou usar ele?(a/u)".lower())
+    ^ (bad-whitespace)
+C: 13, 0: Exactly one space required around comparison
+if acao=="wwssadadba":
+       ^^ (bad-whitespace)
+W: 14, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 14, 0: Exactly one space required around assignment
+	acao1=input('<g>ame of life ou <c>continuar')#
+      ^ (bad-whitespace)
+W: 15, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 15, 0: Exactly one space required around comparison
+	if acao1=='g':
+         ^^ (bad-whitespace)
+W: 16, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 17, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 17, 0: Exactly one space required around assignment
+	player=save.player
+       ^ (bad-whitespace)
+W: 18, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 18, 0: Exactly one space required around assignment
+	player['choice']=7
+                 ^ (bad-whitespace)
+W: 19, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 19, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+C: 40, 0: Line too long (220/100) (line-too-long)
+W: 40, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 40, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+C: 40, 0: Exactly one space required after comma
+	print("Voce selecionou: \nnome: {0} \npoder: {1} \nvida: {2} \ndefesa: {3}".format(player['inspermon']['7']['name'],player['inspermon']['7']['poder'],player['inspermon']['7']['vida'],player['inspermon']['7']['defesa']))
+                                                                                                                    ^ (bad-whitespace)
+C: 40, 0: Exactly one space required after comma
+	print("Voce selecionou: \nnome: {0} \npoder: {1} \nvida: {2} \ndefesa: {3}".format(player['inspermon']['7']['name'],player['inspermon']['7']['poder'],player['inspermon']['7']['vida'],player['inspermon']['7']['defesa']))
+                                                                                                                                                      ^ (bad-whitespace)
+C: 40, 0: Exactly one space required after comma
+	print("Voce selecionou: \nnome: {0} \npoder: {1} \nvida: {2} \ndefesa: {3}".format(player['inspermon']['7']['name'],player['inspermon']['7']['poder'],player['inspermon']['7']['vida'],player['inspermon']['7']['defesa']))
+                                                                                                                                                                                       ^ (bad-whitespace)
+C: 41, 0: Trailing whitespace (trailing-whitespace)
+C: 42, 0: Exactly one space required around comparison
+elif acao=='a':
+         ^^ (bad-whitespace)
+W: 43, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 44, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 44, 0: Exactly one space required after comma
+			file.write(str("player={0}\ninsperdex={1}").format(default.player,insperdex))
+                                                                    ^ (bad-whitespace)
+W: 45, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 45, 0: Exactly one space required around assignment
+	player=default.player
+       ^ (bad-whitespace)
+W: 46, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 46, 0: Exactly one space required around assignment
+	player['choice']=0
+                 ^ (bad-whitespace)
+W: 48, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 48, 0: Exactly one space required around assignment
+	player=save.player
+       ^ (bad-whitespace)
+C: 49, 0: Trailing whitespace (trailing-whitespace)
+C: 50, 0: Exactly one space required around comparison
+if player['choice']==0:
+                   ^^ (bad-whitespace)
+C: 51, 0: Line too long (147/100) (line-too-long)
+W: 51, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 51, 0: Exactly one space required around comparison
+	while player['choice']!=1 and player['choice']!=2 and player['choice']!=3 and player['choice']!=4 and player['choice']!=5 and player['choice']!=6:
+                       ^^ (bad-whitespace)
+C: 51, 0: Exactly one space required around comparison
+	while player['choice']!=1 and player['choice']!=2 and player['choice']!=3 and player['choice']!=4 and player['choice']!=5 and player['choice']!=6:
+                                               ^^ (bad-whitespace)
+C: 51, 0: Exactly one space required around comparison
+	while player['choice']!=1 and player['choice']!=2 and player['choice']!=3 and player['choice']!=4 and player['choice']!=5 and player['choice']!=6:
+                                                                       ^^ (bad-whitespace)
+C: 51, 0: Exactly one space required around comparison
+	while player['choice']!=1 and player['choice']!=2 and player['choice']!=3 and player['choice']!=4 and player['choice']!=5 and player['choice']!=6:
+                                                                                               ^^ (bad-whitespace)
+C: 51, 0: Exactly one space required around comparison
+	while player['choice']!=1 and player['choice']!=2 and player['choice']!=3 and player['choice']!=4 and player['choice']!=5 and player['choice']!=6:
+                                                                                                                       ^^ (bad-whitespace)
+C: 51, 0: Exactly one space required around comparison
+	while player['choice']!=1 and player['choice']!=2 and player['choice']!=3 and player['choice']!=4 and player['choice']!=5 and player['choice']!=6:
+                                                                                                                                               ^^ (bad-whitespace)
+W: 52, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 52, 0: Exactly one space required around assignment
+		player['choice']=-1
+                  ^ (bad-whitespace)
+C: 53, 0: Line too long (252/100) (line-too-long)
+W: 53, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 53, 0: Exactly one space required around assignment
+		acao=input("Escolha seu pokemon inicial:\n1-{0}\n2-{1}\n3-{2}\n4-{3}\n5-{4}".format(player['inspermon']['1']['name'],player['inspermon']['2']['name'],player['inspermon']['3']['name'],player['inspermon']['4']['name'],player['inspermon']['5']['name']))
+      ^ (bad-whitespace)
+C: 53, 0: Exactly one space required after comma
+		acao=input("Escolha seu pokemon inicial:\n1-{0}\n2-{1}\n3-{2}\n4-{3}\n5-{4}".format(player['inspermon']['1']['name'],player['inspermon']['2']['name'],player['inspermon']['3']['name'],player['inspermon']['4']['name'],player['inspermon']['5']['name']))
+                                                                                                                      ^ (bad-whitespace)
+C: 53, 0: Exactly one space required after comma
+		acao=input("Escolha seu pokemon inicial:\n1-{0}\n2-{1}\n3-{2}\n4-{3}\n5-{4}".format(player['inspermon']['1']['name'],player['inspermon']['2']['name'],player['inspermon']['3']['name'],player['inspermon']['4']['name'],player['inspermon']['5']['name']))
+                                                                                                                                                       ^ (bad-whitespace)
+C: 53, 0: Exactly one space required after comma
+		acao=input("Escolha seu pokemon inicial:\n1-{0}\n2-{1}\n3-{2}\n4-{3}\n5-{4}".format(player['inspermon']['1']['name'],player['inspermon']['2']['name'],player['inspermon']['3']['name'],player['inspermon']['4']['name'],player['inspermon']['5']['name']))
+                                                                                                                                                                                        ^ (bad-whitespace)
+C: 53, 0: Exactly one space required after comma
+		acao=input("Escolha seu pokemon inicial:\n1-{0}\n2-{1}\n3-{2}\n4-{3}\n5-{4}".format(player['inspermon']['1']['name'],player['inspermon']['2']['name'],player['inspermon']['3']['name'],player['inspermon']['4']['name'],player['inspermon']['5']['name']))
+                                                                                                                                                                                                                         ^ (bad-whitespace)
+W: 54, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 54, 0: Exactly one space required around assignment
+		player['choice']=int(acao)
+                  ^ (bad-whitespace)
+C: 55, 0: Line too long (224/100) (line-too-long)
+W: 55, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 55, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+C: 55, 0: Exactly one space required after comma
+	print("Voce selecionou: \nnome: {0} \npoder: {1} \nvida: {2} \ndefesa: {3}".format(player['inspermon'][acao]['name'],player['inspermon'][acao]['poder'],player['inspermon'][acao]['vida'],player['inspermon'][acao]['defesa']))
+                                                                                                                     ^ (bad-whitespace)
+C: 55, 0: Exactly one space required after comma
+	print("Voce selecionou: \nnome: {0} \npoder: {1} \nvida: {2} \ndefesa: {3}".format(player['inspermon'][acao]['name'],player['inspermon'][acao]['poder'],player['inspermon'][acao]['vida'],player['inspermon'][acao]['defesa']))
+                                                                                                                                                        ^ (bad-whitespace)
+C: 55, 0: Exactly one space required after comma
+	print("Voce selecionou: \nnome: {0} \npoder: {1} \nvida: {2} \ndefesa: {3}".format(player['inspermon'][acao]['name'],player['inspermon'][acao]['poder'],player['inspermon'][acao]['vida'],player['inspermon'][acao]['defesa']))
+                                                                                                                                                                                          ^ (bad-whitespace)
+W: 60, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 60, 0: Exactly one space required after :
+	if gg:print("\n"*3)
+      ^ (bad-whitespace)
+C: 60, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+W: 61, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 61, 0: Exactly one space required after :
+	if gg:acao=input("Quer passear ou salvar e dormir?(p/d)".lower())
+      ^ (bad-whitespace)
+C: 61, 0: Exactly one space required around assignment
+	if gg:acao=input("Quer passear ou salvar e dormir?(p/d)".lower())
+           ^ (bad-whitespace)
+W: 62, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 62, 0: Exactly one space required after :
+	else:acao='p'
+     ^ (bad-whitespace)
+C: 62, 0: Exactly one space required around assignment
+	else:acao='p'
+          ^ (bad-whitespace)
+W: 63, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 63, 0: Exactly one space required around comparison
+	if acao=='p':
+        ^^ (bad-whitespace)
+C: 64, 0: Line too long (140/100) (line-too-long)
+W: 64, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 64, 0: Exactly one space required after comma
+		(x,insperdex,player['inspermon'][str(player['choice'])]['exp'])=batalha.batalha(player['inspermon'][str(player['choice'])],cata,cfug,1,gg)
+    ^ (bad-whitespace)
+C: 64, 0: Exactly one space required after comma
+		(x,insperdex,player['inspermon'][str(player['choice'])]['exp'])=batalha.batalha(player['inspermon'][str(player['choice'])],cata,cfug,1,gg)
+              ^ (bad-whitespace)
+C: 64, 0: Exactly one space required around assignment
+		(x,insperdex,player['inspermon'][str(player['choice'])]['exp'])=batalha.batalha(player['inspermon'][str(player['choice'])],cata,cfug,1,gg)
+                                                                 ^ (bad-whitespace)
+C: 64, 0: Exactly one space required after comma
+		(x,insperdex,player['inspermon'][str(player['choice'])]['exp'])=batalha.batalha(player['inspermon'][str(player['choice'])],cata,cfug,1,gg)
+                                                                                                                            ^ (bad-whitespace)
+C: 64, 0: Exactly one space required after comma
+		(x,insperdex,player['inspermon'][str(player['choice'])]['exp'])=batalha.batalha(player['inspermon'][str(player['choice'])],cata,cfug,1,gg)
+                                                                                                                                 ^ (bad-whitespace)
+C: 64, 0: Exactly one space required after comma
+		(x,insperdex,player['inspermon'][str(player['choice'])]['exp'])=batalha.batalha(player['inspermon'][str(player['choice'])],cata,cfug,1,gg)
+                                                                                                                                      ^ (bad-whitespace)
+C: 64, 0: Exactly one space required after comma
+		(x,insperdex,player['inspermon'][str(player['choice'])]['exp'])=batalha.batalha(player['inspermon'][str(player['choice'])],cata,cfug,1,gg)
+                                                                                                                                        ^ (bad-whitespace)
+W: 65, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 65, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+W: 66, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 66, 0: Exactly one space required around comparison
+	elif acao=='d':
+          ^^ (bad-whitespace)
+W: 67, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 68, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 68, 0: Exactly one space required after comma
+			file.write(str("player={0}\ninsperdex={1}".format(player,insperdex)))
+                                                           ^ (bad-whitespace)
+W: 69, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 43,37: Redefining built-in 'file' (redefined-builtin)
+C:  1, 0: Missing module docstring (missing-docstring)
+E:  4, 0: Unable to import 'lifee' (invalid syntax (<string>, line 46)) (import-error)
+C:  5, 0: Invalid constant name "cfug" (invalid-name)
+C:  6, 0: Invalid constant name "cata" (invalid-name)
+C:  7, 0: Invalid constant name "gg" (invalid-name)
+E:  9, 0: Unable to import 'default' (import-error)
+C:  9, 0: Import "import default" should be placed at the top of the module (wrong-import-position)
+E: 10, 0: Unable to import 'save' (import-error)
+C: 10, 0: Import "import save" should be placed at the top of the module (wrong-import-position)
+C: 11, 0: Invalid constant name "insperdex" (invalid-name)
+C: 12, 0: Invalid constant name "acao" (invalid-name)
+C: 14, 1: Invalid constant name "acao1" (invalid-name)
+C: 17, 1: Invalid constant name "player" (invalid-name)
+C: 45, 1: Invalid constant name "player" (invalid-name)
+C: 48, 1: Invalid constant name "player" (invalid-name)
+C: 53, 2: Invalid constant name "acao" (invalid-name)
+C: 60, 7: More than one statement on a single line (multiple-statements)
+C: 61, 7: More than one statement on a single line (multiple-statements)
+C: 61, 7: Invalid constant name "acao" (invalid-name)
+C: 62, 6: Invalid constant name "acao" (invalid-name)
+C: 64, 3: Invalid constant name "x" (invalid-name)
+C: 64, 5: Invalid constant name "insperdex" (invalid-name)
+W:  1, 0: Unused import random (unused-import)
+C:  3, 0: standard import "import sys" comes before "import batalha" (wrong-import-order)
+
+
+Report
+======
+45 statements analysed.
+
+Statistics by type
+------------------
+
++---------+-------+-----------+-----------+------------+---------+
+|type     |number |old number |difference |%documented |%badname |
++=========+=======+===========+===========+============+=========+
+|module   |1      |NC         |NC         |0.00        |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|class    |0      |NC         |NC         |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+|method   |0      |NC         |NC         |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+|function |0      |NC         |NC         |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+
+
+
+External dependencies
+---------------------
+::
+
+    batalha (inspermon)
+
+
+
+Raw metrics
+-----------
+
++----------+-------+------+---------+-----------+
+|type      |number |%     |previous |difference |
++==========+=======+======+=========+===========+
+|code      |66     |92.96 |NC       |NC         |
++----------+-------+------+---------+-----------+
+|docstring |0      |0.00  |NC       |NC         |
++----------+-------+------+---------+-----------+
+|comment   |0      |0.00  |NC       |NC         |
++----------+-------+------+---------+-----------+
+|empty     |5      |7.04  |NC       |NC         |
++----------+-------+------+---------+-----------+
+
+
+
+Duplication
+-----------
+
++-------------------------+------+---------+-----------+
+|                         |now   |previous |difference |
++=========================+======+=========+===========+
+|nb duplicated lines      |0     |NC       |NC         |
++-------------------------+------+---------+-----------+
+|percent duplicated lines |0.000 |NC       |NC         |
++-------------------------+------+---------+-----------+
+
+
+
+Messages by category
+--------------------
+
++-----------+-------+---------+-----------+
+|type       |number |previous |difference |
++===========+=======+=========+===========+
+|convention |82     |NC       |NC         |
++-----------+-------+---------+-----------+
+|refactor   |0      |NC       |NC         |
++-----------+-------+---------+-----------+
+|warning    |29     |NC       |NC         |
++-----------+-------+---------+-----------+
+|error      |3      |NC       |NC         |
++-----------+-------+---------+-----------+
+
+
+
+Messages
+--------
+
++----------------------+------------+
+|message id            |occurrences |
++======================+============+
+|bad-whitespace        |50          |
++----------------------+------------+
+|mixed-indentation     |27          |
++----------------------+------------+
+|invalid-name          |14          |
++----------------------+------------+
+|superfluous-parens    |5           |
++----------------------+------------+
+|line-too-long         |5           |
++----------------------+------------+
+|import-error          |3           |
++----------------------+------------+
+|wrong-import-position |2           |
++----------------------+------------+
+|trailing-whitespace   |2           |
++----------------------+------------+
+|multiple-statements   |2           |
++----------------------+------------+
+|wrong-import-order    |1           |
++----------------------+------------+
+|unused-import         |1           |
++----------------------+------------+
+|redefined-builtin     |1           |
++----------------------+------------+
+|missing-docstring     |1           |
++----------------------+------------+
+
+
+
+Global evaluation
+-----------------
+Your code has been rated at -18.00/10
+

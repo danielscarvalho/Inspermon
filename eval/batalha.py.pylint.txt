@@ -1,0 +1,386 @@
+************* Module batalha
+C:  7, 0: Exactly one space required around assignment
+if save.insperdex: insperdex=save.insperdex
+                            ^ (bad-whitespace)
+C: 10, 0: Trailing whitespace (trailing-whitespace)
+W: 10, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 10, 0: Exactly one space required around comparison
+	if x>8532 and x<9000: return -1,-1 
+     ^ (bad-whitespace)
+C: 10, 0: Exactly one space required around comparison
+	if x>8532 and x<9000: return -1,-1 
+                ^ (bad-whitespace)
+C: 10, 0: Exactly one space required after comma
+	if x>8532 and x<9000: return -1,-1 
+                                ^ (bad-whitespace)
+W: 11, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 11, 0: Exactly one space required around assignment
+	y=random.choice(list(insmon.keys()))
+  ^ (bad-whitespace)
+W: 12, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 12, 0: Exactly one space required after comma
+	return insmon[y],y
+                 ^ (bad-whitespace)
+C: 13, 0: Trailing whitespace (trailing-whitespace)
+C: 14, 0: Exactly one space required after comma
+def batalha(seu,cata,cfug,bb,gg):
+               ^ (bad-whitespace)
+C: 14, 0: Exactly one space required after comma
+def batalha(seu,cata,cfug,bb,gg):
+                    ^ (bad-whitespace)
+C: 14, 0: Exactly one space required after comma
+def batalha(seu,cata,cfug,bb,gg):
+                         ^ (bad-whitespace)
+C: 14, 0: Exactly one space required after comma
+def batalha(seu,cata,cfug,bb,gg):
+                            ^ (bad-whitespace)
+W: 15, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 15, 0: Exactly one space required around assignment
+	exp=seu['exp']
+    ^ (bad-whitespace)
+W: 16, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 16, 0: Exactly one space required after comma
+	opt,mon=insale(random.randint(0,10000))
+    ^ (bad-whitespace)
+C: 16, 0: Exactly one space required around assignment
+	opt,mon=insale(random.randint(0,10000))
+        ^ (bad-whitespace)
+C: 16, 0: Exactly one space required after comma
+	opt,mon=insale(random.randint(0,10000))
+                                ^ (bad-whitespace)
+W: 17, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 17, 0: Exactly one space required around comparison
+	if mon==-1:return "Voce procurou mas nao encontrou ninguem",insperdex,exp+0
+       ^^ (bad-whitespace)
+C: 17, 0: Exactly one space required after :
+	if mon==-1:return "Voce procurou mas nao encontrou ninguem",insperdex,exp+0
+           ^ (bad-whitespace)
+C: 17, 0: Exactly one space required after comma
+	if mon==-1:return "Voce procurou mas nao encontrou ninguem",insperdex,exp+0
+                                                            ^ (bad-whitespace)
+C: 17, 0: Exactly one space required after comma
+	if mon==-1:return "Voce procurou mas nao encontrou ninguem",insperdex,exp+0
+                                                                      ^ (bad-whitespace)
+W: 18, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 18, 0: Exactly one space required around assignment
+	insperdex[mon]=opt
+               ^ (bad-whitespace)
+W: 19, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 19, 0: Exactly one space required after comma
+	vidop,vid=opt['vida'],seu['vida']
+      ^ (bad-whitespace)
+C: 19, 0: Exactly one space required around assignment
+	vidop,vid=opt['vida'],seu['vida']
+          ^ (bad-whitespace)
+C: 19, 0: Exactly one space required after comma
+	vidop,vid=opt['vida'],seu['vida']
+                      ^ (bad-whitespace)
+W: 20, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 20, 0: Exactly one space required after :
+	if gg:print("\n"*3)
+      ^ (bad-whitespace)
+C: 20, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+W: 21, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 21, 0: Exactly one space required after :
+	if gg:print("Voce encontrou {0}".format(mon))
+      ^ (bad-whitespace)
+C: 21, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+C: 22, 0: Line too long (116/100) (line-too-long)
+W: 22, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 22, 0: Exactly one space required after :
+	if opt['poder'] and gg:print("poder: {0} \nvida: {1} \ndefesa: {2}".format(opt['poder'],opt['vida'],opt['defesa']))
+                       ^ (bad-whitespace)
+C: 22, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+C: 22, 0: Exactly one space required after comma
+	if opt['poder'] and gg:print("poder: {0} \nvida: {1} \ndefesa: {2}".format(opt['poder'],opt['vida'],opt['defesa']))
+                                                                                        ^ (bad-whitespace)
+C: 22, 0: Exactly one space required after comma
+	if opt['poder'] and gg:print("poder: {0} \nvida: {1} \ndefesa: {2}".format(opt['poder'],opt['vida'],opt['defesa']))
+                                                                                                    ^ (bad-whitespace)
+W: 23, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 23, 0: Exactly one space required after :
+	if gg:print("\n"*3)
+      ^ (bad-whitespace)
+C: 23, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+W: 24, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 24, 0: Exactly one space required after :
+	if gg:w=input("Tentar fugir?(S/N)".lower())
+      ^ (bad-whitespace)
+C: 24, 0: Exactly one space required around assignment
+	if gg:w=input("Tentar fugir?(S/N)".lower())
+        ^ (bad-whitespace)
+W: 25, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 25, 0: Exactly one space required after :
+	else:w='n'
+     ^ (bad-whitespace)
+C: 25, 0: Exactly one space required around assignment
+	else:w='n'
+       ^ (bad-whitespace)
+W: 26, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 26, 0: Exactly one space required around comparison
+	if w=='s':
+     ^^ (bad-whitespace)
+W: 27, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 27, 0: Unnecessary parens after 'if' keyword (superfluous-parens)
+C: 27, 0: Exactly one space required after comma
+		if(random.randint(0,100)<cfug):
+                     ^ (bad-whitespace)
+C: 27, 0: Exactly one space required around comparison
+		if(random.randint(0,100)<cfug):
+                          ^ (bad-whitespace)
+W: 28, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 28, 0: Exactly one space required after comma
+			return 'voce conseguiu fugir',insperdex,exp+1
+                                ^ (bad-whitespace)
+C: 28, 0: Exactly one space required after comma
+			return 'voce conseguiu fugir',insperdex,exp+1
+                                          ^ (bad-whitespace)
+W: 29, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 30, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 30, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+W: 31, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 31, 0: Exactly one space required around comparison
+	while vid>0 and vidop>0:
+          ^ (bad-whitespace)
+C: 31, 0: Exactly one space required around comparison
+	while vid>0 and vidop>0:
+                      ^ (bad-whitespace)
+W: 32, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 32, 0: Exactly one space required around comparison
+		if bb==0:
+       ^^ (bad-whitespace)
+W: 33, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 33, 0: Exactly one space required after comma
+			if(random.randint(0,100)<cata) and ((seu['poder'])-opt['defesa'])>0:
+                      ^ (bad-whitespace)
+C: 33, 0: Exactly one space required around comparison
+			if(random.randint(0,100)<cata) and ((seu['poder'])-opt['defesa'])>0:
+                           ^ (bad-whitespace)
+C: 33, 0: Exactly one space required around comparison
+			if(random.randint(0,100)<cata) and ((seu['poder'])-opt['defesa'])>0:
+                                                                    ^ (bad-whitespace)
+W: 34, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 34, 0: Exactly one space required around assignment
+				vidop-=((seu['poder'])-opt['defesa'])
+         ^^ (bad-whitespace)
+C: 36, 0: Trailing whitespace (trailing-whitespace)
+W: 36, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 36, 0: Exactly one space required around comparison
+			elif (opt['poder']-seu['defesa'])>0: 
+                                    ^ (bad-whitespace)
+W: 37, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 37, 0: Exactly one space required around assignment
+				vid-=(opt['poder']-seu['defesa'])
+       ^^ (bad-whitespace)
+W: 39, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 39, 0: Exactly one space required after comma
+			else: return 'Voce perdeu',insperdex,100
+                             ^ (bad-whitespace)
+C: 39, 0: Exactly one space required after comma
+			else: return 'Voce perdeu',insperdex,100
+                                       ^ (bad-whitespace)
+W: 40, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 41, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 41, 0: Unnecessary parens after 'if' keyword (superfluous-parens)
+C: 41, 0: Exactly one space required after comma
+			if(random.randint(0,100)<cata):
+                      ^ (bad-whitespace)
+C: 41, 0: Exactly one space required around comparison
+			if(random.randint(0,100)<cata):
+                           ^ (bad-whitespace)
+W: 42, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 42, 0: Exactly one space required around assignment
+				vidop-=(seu['poder']/opt['defesa'])*1
+         ^^ (bad-whitespace)
+W: 44, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 45, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 45, 0: Exactly one space required around assignment
+				vid-=(opt['poder']/seu['defesa'])*1
+       ^^ (bad-whitespace)
+C: 47, 0: Trailing whitespace (trailing-whitespace)
+C: 48, 0: Trailing whitespace (trailing-whitespace)
+W: 49, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 49, 0: Exactly one space required around comparison
+	if vid<=0 and vidop<=0: return 'Empate',insperdex,exp+0
+       ^^ (bad-whitespace)
+C: 49, 0: Exactly one space required around comparison
+	if vid<=0 and vidop<=0: return 'Empate',insperdex,exp+0
+                    ^^ (bad-whitespace)
+C: 49, 0: Exactly one space required after comma
+	if vid<=0 and vidop<=0: return 'Empate',insperdex,exp+0
+                                        ^ (bad-whitespace)
+C: 49, 0: Exactly one space required after comma
+	if vid<=0 and vidop<=0: return 'Empate',insperdex,exp+0
+                                                  ^ (bad-whitespace)
+C: 50, 0: Trailing whitespace (trailing-whitespace)
+W: 50, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 50, 0: Exactly one space required around comparison
+	if vid<=0: 
+       ^^ (bad-whitespace)
+W: 51, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 51, 0: Exactly one space required around comparison
+		if (exp-opt['exp'])<100:
+                     ^ (bad-whitespace)
+W: 52, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 52, 0: Exactly one space required after comma
+			return 'Voce perdeu',insperdex,exp-opt['exp']
+                       ^ (bad-whitespace)
+C: 52, 0: Exactly one space required after comma
+			return 'Voce perdeu',insperdex,exp-opt['exp']
+                                 ^ (bad-whitespace)
+W: 53, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 54, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 54, 0: Exactly one space required after comma
+			return 'Voce perdeu',insperdex,101
+                       ^ (bad-whitespace)
+C: 54, 0: Exactly one space required after comma
+			return 'Voce perdeu',insperdex,101
+                                 ^ (bad-whitespace)
+C: 55, 0: Final newline missing (missing-final-newline)
+W: 55, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 55, 0: Exactly one space required around comparison
+	elif vidop<=0: return 'Voce ganhou',insperdex,exp+opt['exp']
+           ^^ (bad-whitespace)
+C: 55, 0: Exactly one space required after comma
+	elif vidop<=0: return 'Voce ganhou',insperdex,exp+opt['exp']
+                                    ^ (bad-whitespace)
+C: 55, 0: Exactly one space required after comma
+	elif vidop<=0: return 'Voce ganhou',insperdex,exp+opt['exp']
+                                              ^ (bad-whitespace)
+C:  1, 0: Missing module docstring (missing-docstring)
+E:  4, 0: Unable to import 'default' (import-error)
+C:  4, 0: Import "from default import insmon" should be placed at the top of the module (wrong-import-position)
+E:  5, 0: Unable to import 'default' (import-error)
+C:  5, 0: Import "from default import insperdex" should be placed at the top of the module (wrong-import-position)
+E:  6, 0: Unable to import 'save' (import-error)
+C:  6, 0: Import "import save" should be placed at the top of the module (wrong-import-position)
+C:  7,19: More than one statement on a single line (multiple-statements)
+C:  7,19: Invalid constant name "insperdex" (invalid-name)
+C:  9, 0: Invalid argument name "x" (invalid-name)
+C:  9, 0: Missing function docstring (missing-docstring)
+C: 10,23: More than one statement on a single line (multiple-statements)
+C: 11, 1: Invalid variable name "y" (invalid-name)
+C: 14, 0: Invalid argument name "bb" (invalid-name)
+C: 14, 0: Invalid argument name "gg" (invalid-name)
+C: 14, 0: Missing function docstring (missing-docstring)
+C: 17,12: More than one statement on a single line (multiple-statements)
+C: 20, 7: More than one statement on a single line (multiple-statements)
+C: 21, 7: More than one statement on a single line (multiple-statements)
+C: 22,24: More than one statement on a single line (multiple-statements)
+C: 23, 7: More than one statement on a single line (multiple-statements)
+C: 24, 7: More than one statement on a single line (multiple-statements)
+C: 24, 7: Invalid variable name "w" (invalid-name)
+C: 25, 6: Invalid variable name "w" (invalid-name)
+C: 49,25: More than one statement on a single line (multiple-statements)
+C: 55,16: More than one statement on a single line (multiple-statements)
+R: 14, 0: Too many return statements (7/6) (too-many-return-statements)
+R: 14, 0: Too many branches (22/12) (too-many-branches)
+
+
+Report
+======
+53 statements analysed.
+
+Statistics by type
+------------------
+
++---------+-------+-----------+-----------+------------+---------+
+|type     |number |old number |difference |%documented |%badname |
++=========+=======+===========+===========+============+=========+
+|module   |1      |NC         |NC         |0.00        |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|class    |0      |NC         |NC         |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+|method   |0      |NC         |NC         |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+|function |2      |NC         |NC         |0.00        |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+
+
+
+Raw metrics
+-----------
+
++----------+-------+------+---------+-----------+
+|type      |number |%     |previous |difference |
++==========+=======+======+=========+===========+
+|code      |48     |85.71 |NC       |NC         |
++----------+-------+------+---------+-----------+
+|docstring |0      |0.00  |NC       |NC         |
++----------+-------+------+---------+-----------+
+|comment   |4      |7.14  |NC       |NC         |
++----------+-------+------+---------+-----------+
+|empty     |4      |7.14  |NC       |NC         |
++----------+-------+------+---------+-----------+
+
+
+
+Duplication
+-----------
+
++-------------------------+------+---------+-----------+
+|                         |now   |previous |difference |
++=========================+======+=========+===========+
+|nb duplicated lines      |0     |NC       |NC         |
++-------------------------+------+---------+-----------+
+|percent duplicated lines |0.000 |NC       |NC         |
++-------------------------+------+---------+-----------+
+
+
+
+Messages by category
+--------------------
+
++-----------+-------+---------+-----------+
+|type       |number |previous |difference |
++===========+=======+=========+===========+
+|convention |103    |NC       |NC         |
++-----------+-------+---------+-----------+
+|refactor   |2      |NC       |NC         |
++-----------+-------+---------+-----------+
+|warning    |38     |NC       |NC         |
++-----------+-------+---------+-----------+
+|error      |3      |NC       |NC         |
++-----------+-------+---------+-----------+
+
+
+
+Messages
+--------
+
++---------------------------+------------+
+|message id                 |occurrences |
++===========================+============+
+|bad-whitespace             |65          |
++---------------------------+------------+
+|mixed-indentation          |38          |
++---------------------------+------------+
+|multiple-statements        |10          |
++---------------------------+------------+
+|superfluous-parens         |7           |
++---------------------------+------------+
+|invalid-name               |7           |
++---------------------------+------------+
+|trailing-whitespace        |6           |
++---------------------------+------------+
+|wrong-import-position      |3           |
++---------------------------+------------+
+|missing-docstring          |3           |
++---------------------------+------------+
+|import-error               |3           |
++---------------------------+------------+
+|too-many-return-statements |1           |
++---------------------------+------------+
+|too-many-branches          |1           |
++---------------------------+------------+
+|missing-final-newline      |1           |
++---------------------------+------------+
+|line-too-long              |1           |
++---------------------------+------------+
+
+
+
+Global evaluation
+-----------------
+Your code has been rated at -19.81/10
+
